@@ -111,5 +111,17 @@ Encourage **knowledge sharing** from top-performing municipalities on:
 - Very small municipalities may skew % changes due to low absolute values.
 - Some reporting periods may be **missing or delayed**, especially in early 2023.
 - Installed capacity (`kwp`) does **not represent actual energy generation** — this analysis focuses on **capacity potential**.
+- **Future Data is Projected**: Although the dataset includes monthly entries through **June 2025**, the publisher states the data was last updated in **March 2024**. The values beyond that date are assumed to be **projected or planned figures**, not actual measurements. These are clearly labeled as `Projected` in this analysis.
 
+- **Date Handling**: Time-based analysis uses the `energyreporter_date` column, which represents the reporting date. It is assumed that this date aligns closely with the period during which measurements or projections were made.
+
+- **Solar Metrics Scope**: This analysis focuses on `solar_power_installed_kwp` as a proxy for solar development. Other columns like `solar_potential_usage` are available but were not included in this initial exploration.
+
+- **Municipality-Level Summation**: National-level trends are calculated by summing across all municipalities. This assumes no duplication or overlap between municipality-level records.
+
+- **Data Completeness**: Most fields are fully populated, but some others in the broader dataset (e.g., charging spot data or renewable electricity production) have missing values and were excluded from this version of the analysis.
+
+- **Data Interpretation**: It is assumed that values are in kilowatt-peak (kWp), a standard for installed solar capacity. No unit conversions were necessary.
+
+- **No External Validation**: The dataset has been taken at face value and was not cross-referenced with other sources (e.g., Swiss federal energy statistics).
 ---
