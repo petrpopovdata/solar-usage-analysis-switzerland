@@ -125,5 +125,7 @@ Encourage **knowledge sharing** from top-performing municipalities on:
 
 - **No External Validation**: The dataset has been taken at face value and was not cross-referenced with other sources (e.g., Swiss federal energy statistics).
 - - **Single Outlier in Solar Usage**: One record (Chapelle (Glâne), Jan 2025) reported a solar potential usage of 200%. This is assumed to be a data error or placeholder. For visual clarity, values above 100% were capped at 1.0.
-
+- - **Rolling Average Gap (Apr 2024)**: A small gap appears between the actual and projected values around March–April 2024.
+This is due to the use of a 3-month rolling average, which requires adjacent data points for smoothing. Since projections begin immediately after March 2024, the first few forecasted averages are delayed accordingly.
+This is expected behavior and does not indicate missing data.
 ---
