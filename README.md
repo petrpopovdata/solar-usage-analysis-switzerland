@@ -19,7 +19,7 @@ This project analyzes the extent to which municipalities are utilizing their ava
 - Leading and lagging municipalities  
 - Recommendations to unlock unused capacity  
 
-📊 The data is sourced from [Energie Reporter](https://www.energie-reporter.ch/) and reflects **monthly progress in solar power installation and potential usage** at the municipality level.
+📊 The data is sourced from [Energie Reporter](https://opendata.swiss/en/dataset/energie-reporter) and reflects **monthly progress in solar power installation and potential usage** at the municipality level.
 
 ---
 
