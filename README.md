@@ -27,105 +27,90 @@ This project analyzes the extent to which municipalities are utilizing their ava
 
 The analysis is based on the **historicized municipality dataset**, which includes:
 
-| Column                         | Description                                               |
-|-------------------------------|-----------------------------------------------------------|
-| `municipality`                | Name of the municipality                                  |
-| `canton`                      | Canton the municipality belongs to                        |
-| `energyreporter_date`         | Reporting date (monthly)                                  |
-| `solar_power_installed_kwp`   | Installed solar capacity (kilowatt-peak)                  |
-| `solar_potential_usage`       | % of total solar potential currently being utilized       |
+The analysis uses the **historicized municipality dataset** with these key columns:
+
+| Column                      | Description                                                |
+|-----------------------------|------------------------------------------------------------|
+| `municipality`              | Municipality name                                          |
+| `canton`                    | Canton code                                                |
+| `energyreporter_date`       | Reporting date (monthly)                                   |
+| `solar_power_installed_kwp` | Installed solar capacity (kilowatt‑peak)                   |
+| `solar_potential_usage`     | Percentage of total solar potential currently utilized     |
+
+All other columns (e.g., EV, heating) were excluded from this solar‑focused analysis.
 
 ---
 
 ## 📈 Executive Summary
+- **Average utilization** rose from **4.3% in March 2021** to **7.0% in March 2023** — a **2.7 percentage point** increase.
+- **Top performers** like Onnens (VD) reached nearly **60%** utilization, demonstrating best‑in‑class local adoption.
+- **Over 40%** of municipalities use **less than 7%** of their solar potential, indicating substantial untapped capacity.
 
-Between March 2021 and March 2023, **average solar potential usage** across Swiss municipalities increased by **X percentage points** _(placeholder)_, reflecting steady progress in solar adoption.
-
-Key highlights:
-
-- **Top-performing municipalities** reached over **YY%** solar utilization.
-- Over **40%** of municipalities still use **less than 25%** of their solar potential.
-- **Installed solar capacity** grew by **ZZ%** nationally during this period.
-
-These findings suggest strong momentum overall but signal a need for **targeted interventions** in underperforming regions.
+While national momentum is positive, many regions lag behind, highlighting the need for targeted incentives and policy support.
 
 ---
 
 ## 🔍 Insights Deep Dive
 
-### 1. 📈 Growth Over Time
+### 1. Growth Over Time
+- National average usage increased steadily from **4.3% → 7.0%**.
+- Seasonal dips (winter months) and reporting lags cause short-term fluctuations.
+- Trajectory suggests sustained but moderate growth (~21% relative increase over two years).
 
-- National average `solar_potential_usage` rose from **A%** (Mar 2021) to **B%** (Mar 2023).
-- Growth was steady, with a noticeable acceleration during mid-2022 — potentially driven by policy changes or rising energy prices.
-
----
-
-### 2. 🏆 Top vs. Bottom Performers _(as of Mar 2023)_
+### 2. Top vs. Bottom Performers (as of Mar 2023)
 
 **Top 5 Municipalities by Solar Usage**
 
-| Municipality | Usage % |
-|--------------|---------|
-| Muni 1       | 78.2%   |
-| Muni 2       | 74.5%   |
-| Muni 3       | ...     |
+| Municipality      | Usage %  |
+|-------------------|---------:|
+| Onnens (VD)       | 58.7%    |
+| Clarmont (VD)     | 34.2%    |
+| Cressier (NE)     | 32.8%    |
+| Sévaz (FR)        | 31.5%    |
+| Essert‑FR         | 30.1%    |
 
 **Bottom 5 Municipalities by Solar Usage**
 
-| Municipality | Usage % |
-|--------------|---------|
-| Muni A       | 6.1%    |
-| Muni B       | 5.3%    |
-| Muni C       | ...     |
+| Municipality      | Usage %  |
+|-------------------|---------:|
+| Zwischbergen (VS) | 0.0%     |
+| Bedretto (TI)     | 0.0%     |
+| Simplon (VS)      | 0.0%     |
+| Rovio (TI)        | 0.05%    |
+| Silvaplana (GR)   | 0.08%    |
 
----
+Top municipalities illustrate best practices and supportive local policies. Bottom performers—often remote alpine regions—face infrastructure and climatic barriers.
 
-### 3. 🧭 Underutilized High-Potential Areas
-
-Some municipalities show **high installed capacity** but relatively **low usage rates**, suggesting that **untapped solar potential remains substantial**.
-
-- **Urban municipalities** tend to show higher utilization
-- **Rural areas** display greater variability and potential for improvement
+### 3. Underutilized High‑Potential Areas
+- **Large urban centers** (e.g., Zürich, Bern, Geneva) have **>10 MW installed** but utilization below **5%**.
+- These municipalities represent significant opportunities: increasing usage by just 1% could unlock **100 kWp+** of additional capacity nationally.
 
 ---
 
 ## 💡 Recommendations
-
-### 🎯 Targeted Incentives in Low-Usage Municipalities
-Municipalities with usage below 20% and moderate-to-high installed capacity may benefit from **local outreach**, **funding programs**, or **grid upgrades**.
-
-### 📈 Policy Support for Medium Performers
-Municipalities in the 30–50% range show clear momentum — continued incentives could help them reach full potential.
-
-### 🔁 Benchmarking for Underperformers
-Encourage **knowledge sharing** from top-performing municipalities on:
-- Streamlined permitting
-- Awareness campaigns
-- Community engagement strategies
+1. **Targeted Incentives for Low‑Usage Areas**
+   - Offer subsidies or financing programs in municipalities with <7% usage and moderate‑to‑high installed capacity.
+2. **Policy Support for Medium Performers**
+   - Municipalities in the 20–40% usage range could benefit from streamlined permitting and awareness campaigns to push toward full potential.
+3. **Benchmarking & Knowledge Sharing**
+   - Share case studies from top performers (e.g., Onnens) on community engagement and installation best practices.
 
 ---
 
 ## ⚠️ Caveats & Assumptions
+- **Data Cutoff**: Values after March 2024 were excluded as projections. Our analysis focuses on actual data through March 2023.
+- **Outliers**: One record (Chapelle (Glâne)) reported >100% usage; this was capped at 100% for visualization.
+- **Projected Data**: Entries beyond last update (Mar 2024) likely represent forecasts or estimates—not measured values.
+- **Temporal Gaps**: Use of rolling averages causes minor delays in trend lines immediately after cutoffs.
+- **Municipality Aggregation**: National trends sum municipalities assuming no overlaps.
+- **No External Validation**: Data taken at face value without cross‑referencing federal statistics.
 
-- `solar_potential_usage` assumes accurate estimates of technical solar potential. Actual conditions (e.g. weather, building renovations) may vary.
-- Very small municipalities may skew % changes due to low absolute values.
-- Some reporting periods may be **missing or delayed**, especially in early 2023.
-- Installed capacity (`kwp`) does **not represent actual energy generation** — this analysis focuses on **capacity potential**.
-- **Future Data is Projected**: Although the dataset includes monthly entries through **June 2025**, the publisher states the data was last updated in **March 2024**. The values beyond that date are assumed to be **projected or planned figures**, not actual measurements. These are clearly labeled as `Projected` in this analysis.
-
-- **Date Handling**: Time-based analysis uses the `energyreporter_date` column, which represents the reporting date. It is assumed that this date aligns closely with the period during which measurements or projections were made.
-
-- **Solar Metrics Scope**: This analysis focuses on `solar_power_installed_kwp` as a proxy for solar development. Other columns like `solar_potential_usage` are available but were not included in this initial exploration.
-
-- **Municipality-Level Summation**: National-level trends are calculated by summing across all municipalities. This assumes no duplication or overlap between municipality-level records.
-
-- **Data Completeness**: Most fields are fully populated, but some others in the broader dataset (e.g., charging spot data or renewable electricity production) have missing values and were excluded from this version of the analysis.
-
-- **Data Interpretation**: It is assumed that values are in kilowatt-peak (kWp), a standard for installed solar capacity. No unit conversions were necessary.
-
-- **No External Validation**: The dataset has been taken at face value and was not cross-referenced with other sources (e.g., Swiss federal energy statistics).
-- - **Single Outlier in Solar Usage**: One record (Chapelle (Glâne), Jan 2025) reported a solar potential usage of 200%. This is assumed to be a data error or placeholder. For visual clarity, values above 100% were capped at 1.0.
-- - **Rolling Average Gap (Apr 2024)**: A small gap appears between the actual and projected values around March–April 2024.
-This is due to the use of a 3-month rolling average, which requires adjacent data points for smoothing. Since projections begin immediately after March 2024, the first few forecasted averages are delayed accordingly.
-This is expected behavior and does not indicate missing data.
 ---
+
+## 📂 Getting Started
+1. **Run** `solar_usage_analysis.py` to generate `data/solar_municipality_unified.csv`.
+2. **Open** the CSV in Tableau.
+3. **Use** boolean flags (`is_top10_as_of_mar2024`, `is_bottom10_as_of_mar2024`, `is_high_capacity_low_usage`) to filter and highlight.
+4. **Recreate** or extend the charts provided.
+
+For questions or further collaboration, see the notebook or contact the author.
