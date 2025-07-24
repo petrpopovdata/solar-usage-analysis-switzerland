@@ -48,8 +48,8 @@ As of **March 2024**:
 - 🌤️ **National average solar usage is 7% (as of March 2024)**, rising from 4.3% in 2021.
 - 🏘️ **289 out of 2184 municipalities (13.2%) use less than 5% of their solar potential**, even with installed infrastructure.
 - 🏅 **Top-performing municipalities** exceed 40% usage, often clustered within certain cantons like Ticino (TI), and Vaud (VD).
-- 🔍 **Cantons like Aargau and Vaud** have high installed capacity but relatively low usage.
-- 📈 If current trends hold, national usage is projected to reach **~25% by mid-2025**.
+- 🔍 Despite having the highest levels of installed solar capacity, major Swiss cities like Zürich, Bern, and Lausanne are utilizing less than 5% of their solar potential.
+- 📈 If current trends hold, national usage is projected to reach **~10% by mid-2025**.
 
 ---
 
@@ -57,7 +57,11 @@ As of **March 2024**:
 
 ### 1. 🔝 Adoption Leaders and Laggards
 - Histogram reveals a **long tail**: most municipalities are underperforming.
-- Top 10 municipalities show **2–3× the national average**.
+- Leading municipalities like Onnens (VD) and Clarmont (VD) have solar potential usage rates over 6× the national average.
+- The national average stands at 6.7%, while the top municipality exceeds 40% — highlighting significant geographic disparities.
+- Most others are still far below the national average — signaling room for growth and replication of best practices.
+- If more municipalities matched even the mid-tier performers, national solar usage could grow substantially.
+- Municipalities in similar cantons (e.g., VD and FR) show variable performance, indicating that policy, not geography, may be the key driver.
 - Outperformers often share regional or infrastructure characteristics.
 
 > Visuals:
