@@ -45,9 +45,9 @@ All other columns (e.g., EV, heating) were excluded from this solar‑focused an
 
 As of **March 2024**:
 
-- 🌤️ **National average solar usage is ~19%**, rising from ~7% in 2021.
-- 🏘️ **300+ municipalities use less than 5% of their solar potential**, even with installed infrastructure.
-- 🏅 **Top-performing municipalities** exceed 60% usage, often clustered within certain cantons.
+- 🌤️ **National average solar usage is 7% (as of March 2024)**, rising from 4.3% in 2021.
+- 🏘️ **289 out of 2184 municipalities (13.2%) use less than 5% of their solar potential**, even with installed infrastructure.
+- 🏅 **Top-performing municipalities** exceed 40% usage, often clustered within certain cantons like Ticino (TI), and Vaud (VD).
 - 🔍 **Cantons like Aargau and Vaud** have high installed capacity but relatively low usage.
 - 📈 If current trends hold, national usage is projected to reach **~25% by mid-2025**.
 
