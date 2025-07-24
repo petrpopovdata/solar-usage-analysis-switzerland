@@ -71,9 +71,24 @@ As of **March 2024**:
 ---
 
 ### 2. ⚖️ Installed Capacity ≠ Usage
-- Scatterplot shows **nonlinear relationship** between capacity and usage.
-- Several municipalities with **>1000 kWp installed** are using <10%.
-- Identifies **inefficiency clusters** and potential policy gaps.
+- There's no strong linear correlation between installed capacity (kWp) and actual usage (%).
+- Some municipalities with very high capacity (>10,000 kWp) still have very low usage (<10%), indicating underutilization.
+- There’s a dense cluster of municipalities with moderate capacity and low usage (bottom-right quadrant).This suggests structural inefficiencies or policy/implementation issues.
+- High-capacity, low-usage municipalities may have invested in infrastructure without ensuring uptake, integration, or behavior change.
+- Municipalities with low installed capacity but high usage (Curio, Astano) are potentially model cases of efficiency. These municipalities make the most out of limited resources — ideal for best practice case studies.
+- As installed capacity increases beyond a threshold (e.g., 15k–20k kWp), usage stagnates or drops. This may imply scale-related inefficiencies, lack of grid integration, or oversizing without uptake.
+- Darker shades (pink/purple) indicate extreme inefficiency — useful to pinpoint which municipalities to audit or support.
+- Color distribution also shows inefficiency is widespread across cantons, not just isolated.
+- Cantons BE and AG appear to have a disproportionately high number of municipalities with underutilized solar capacity — indicating regional opportunity for better solar adoption initiatives or more efficient usage.
+- Municipalities with low installed capacity but high usage (Curio, Astano, Rovray, Clarmont) are potentially model cases of efficiency. These municipalities make the most out of limited resources — ideal for best practice case studies.
+- Upper-right quadrant (high capacity & high usage) is nearly empty, suggesting very few municipalities are both scaling and utilizing effectively.
+- Lower-left quadrant is densely populated — showing a long tail of low-capacity, low-usage municipalities, which may represent areas with either limited funding or weak policy engagement.
+- Opportunity zone: Mid-capacity + mid-usage municipalities might be the most scalable targets — they have infrastructure and moderate performance, suggesting room for improvement.
+- High Capacity + Low Usage = "Underperformers": Zürich, Bern, Lausanne, Basel, Bellinzona
+- Low Capacity + High Usage = "Efficiency Champions": Curio, Astano, Rovray, Clarmont
+- High Capacity + High Usage = "Model Scalers": No
+- Low Capacity + Low Usage = "Neglected Zone": Auboranges, Andermatt, Saxeten.
+- At very high installed capacity (>25kW or >40kW), solar usage plateaus or drops. This is critical for national investment planning: don’t just install more; ensure it's used well.
 
 > Visuals:
 - *Installed Capacity vs Usage Scatterplot*
