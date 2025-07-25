@@ -121,9 +121,14 @@ As of **March 2024**:
 ---
 
 ### 5. 🗺️ Regional Disparities
-- **Canton averages vary widely** (10–30% usage).
-- Some rural areas outperform urban ones.
-- Opportunity to examine **policy/zoning influences**.
+- In both actual and projected data, there's a clear usage gap between leading and lagging cantons.
+- Leading cantons like AI, AR, LU, SG consistently show higher-than-average usage.
+- Lagging cantons — UR, VS, GE, GR — remain below the national average even in projections.
+- While the national average increases from ~7.2% (actual) to ~11.0% (projected), not all cantons benefit equally: Some low-performing cantons improve slightly but remain at the bottom. AI jumps to the top in projected data, suggesting strong policy or adoption plans.
+- Surprisingly, rural cantons (e.g., AI, AR, LU) outperform urban-heavy ones (e.g., ZH, GE, TI), indicating that urbanization isn’t a driver of solar efficiency. This hints at better engagement, adoption, or policy execution in smaller/rural cantons.
+- Some cantons with large installed capacities (e.g., BE, GE) still rank low in actual usage, suggesting underutilization of infrastructure. This reinforces earlier scatterplot findings about inefficiencies at scale.
+- Cantons with both low actual and projected usage may need targeted intervention, such as: Local incentive redesign, infrastructure integration support, public engagement or behavior chnage campaigns.
+- 
 
 > Visuals:
 - *Average Usage by Canton*
