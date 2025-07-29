@@ -1,45 +1,67 @@
-# ☀️ Swiss Solar Adoption: Are We Fully Tapping Municipal Potential?
+tgleich# ☀️ Swiss Solar Adoption: Are We Fully Tapping Municipal Potential?
 
 ## 📌 Project Background
 
-Switzerland is investing heavily in solar energy to meet its climate goals — but are all municipalities utilizing their solar potential equally?
+Switzerland is ramping up its solar investments to meet national energy and climate goals — but **are all municipalities equally effective in utilizing their solar potential**?
 
-This analysis uses municipality-level energy data from **Energie Reporter** to explore:
-- Solar capacity and actual usage
-- Regional disparities across Switzerland
-- Untapped opportunities for investment or policy focus
+This project uses granular data from the [**Energie Reporter**](https://opendata.swiss/en/dataset/energie-reporter) to assess:
+- 📈 How much solar capacity is installed vs. actually used  
+- 🗺️ Regional disparities in adoption across municipalities and cantons  
+- 🚧 Where inefficiencies and untapped opportunities exist  
 
-This project delivers insights relevant to:
-- **Federal and cantonal energy agencies**
-- **Local governments and infrastructure planners**
+The insights are designed to support:
+- **Federal and cantonal energy agencies**  
+- **Local governments and infrastructure planners**  
 - **Environmental policymakers and NGOs**
 
-Data spans over 3 years across 2,000+ municipalities. The focus is to identify where solar investments are underperforming — and why.
+The core objective is to pinpoint **underperforming areas** and explain *why* solar usage lags — despite available infrastructure — across Switzerland’s 2,000+ municipalities over a 3-year period.
 
 ---
 
 ## 🗂️ Data Overview
 
-**Source:** [Energie Reporter Switzerland](https://opendata.swiss/en/dataset/energie-reporter)  
-**License:** Creative Commons BY 4.0  
-**Time Period:** March 2021 – March 2024  
-**Granularity:** Monthly, by Municipality
+### 📥 Primary Dataset
 
-The analysis uses the **historicized municipality dataset** with these key columns:
+- **Source:** [Energie Reporter Switzerland](https://opendata.swiss/en/dataset/energie-reporter)  
+- **License:** Creative Commons BY 4.0  
+- **Period Covered:** March 2021 – March 2024  
+- **Granularity:** Monthly, by Municipality  
 
-| Column                      | Description                                                |
-|-----------------------------|------------------------------------------------------------|
-| `municipality`              | Municipality name                                          |
-| `canton`                    | Canton code                                                |
-| `energyreporter_date`       | Reporting date (monthly)                                   |
-| `solar_power_installed_kwp` | Installed solar capacity (kilowatt‑peak)                   |
-| `solar_potential_usage`     | Percentage of total solar potential currently utilized     |
+From the original dataset — which included EV adoption, heating data, and electricity consumption — we focused on solar energy indicators. After filtering and cleaning, we retained:
 
-All other columns (e.g., EV, heating) were excluded from this solar‑focused analysis.
+| Column                    | Description                                                  |
+|---------------------------|--------------------------------------------------------------|
+| `energyreporter_date`     | Monthly reporting date                                        |
+| `municipality`            | Municipality name                                             |
+| `canton`                  | Canton code                                                  |
+| `solar_potential_usage`   | Share of total solar potential currently utilized (%)         |
+| `solar_power_installed_kwp` | Installed solar capacity in kilowatt-peak (kWp)             |
 
-> Data was cleaned and pre-processed in Python. Final dataset and visualizations were developed in Tableau.
+### 🧮 Engineered Fields (Python)
+
+To support deeper analysis, we generated additional indicators:
+
+| Field                         | Description                                                |
+|-------------------------------|------------------------------------------------------------|
+| `unused_solar_potential`      | Remaining untapped solar potential                         |
+| `is_top10_as_of_mar2024`      | Flag for top 10 municipalities by solar usage (Mar 2024)   |
+| `is_bottom10_as_of_mar2024`   | Flag for bottom 10 municipalities by solar usage (Mar 2024)|
+| `is_high_capacity_low_usage` | Flag for high capacity, low usage municipalities           |
+
+> ⚙️ All data preprocessing and transformation were done in **Python** using `pandas` and `geopandas`.
 
 ---
+
+### 🌍 Supplementary Geospatial Data
+
+To enable **map visualizations** at the canton level, we included additional spatial data:
+
+- **Source:** [SwissBOUNDARIES3D – swisstopo](https://www.swisstopo.admin.ch/de/landschaftsmodell-swissboundaries3d)  
+- **Tooling:** `GeoPandas` for extracting and computing geographic centroids  
+- **Usage:** Supports canton-level bubble maps and choropleths in Tableau
+
+---
+
 
 ## 🧠 Executive Summary
 
@@ -80,7 +102,6 @@ As of **March 2024**:
 - Darker shades (pink/purple) indicate extreme inefficiency — useful to pinpoint which municipalities to audit or support.
 - Color distribution also shows inefficiency is widespread across cantons, not just isolated.
 - Cantons BE and AG appear to have a disproportionately high number of municipalities with underutilized solar capacity — indicating regional opportunity for better solar adoption initiatives or more efficient usage.
-- Municipalities with low installed capacity but high usage (Curio, Astano, Rovray, Clarmont) are potentially model cases of efficiency. These municipalities make the most out of limited resources — ideal for best practice case studies.
 - Upper-right quadrant (high capacity & high usage) is nearly empty, suggesting very few municipalities are both scaling and utilizing effectively.
 - Lower-left quadrant is densely populated — showing a long tail of low-capacity, low-usage municipalities, which may represent areas with either limited funding or weak policy engagement.
 - Opportunity zone: Mid-capacity + mid-usage municipalities might be the most scalable targets — they have infrastructure and moderate performance, suggesting room for improvement.
@@ -89,6 +110,7 @@ As of **March 2024**:
 - High Capacity + High Usage = "Model Scalers": No
 - Low Capacity + Low Usage = "Neglected Zone": Auboranges, Andermatt, Saxeten.
 - At very high installed capacity (>25kW or >40kW), solar usage plateaus or drops. This is critical for national investment planning: don’t just install more; ensure it's used well.
+- 
 
 > Visuals:
 - *Installed Capacity vs Usage Scatterplot*
@@ -97,13 +119,18 @@ As of **March 2024**:
 ---
 
 ### 3. 📈 Growth Trends Over Time
-- Steady upward trend from 2021 to 2024.
-- Growth has **slowed slightly** in recent quarters.
-- Forecast suggests **~25% usage by Q2 2025** if unchanged.
+- Switzerland has shown steady solar potential usage growth over the past 3 years, with an overall upward trend despite volatility in specific months.
+- While growth rates vary from month to month, a positive long-term trajectory is evident, as confirmed by the trend line.
+- There are occasional dips, such as in April 2023 (-12.8%) and February 2022 (-4.9%), but these are not due to missing data or reporting inconsistencies.
+- Python analysis confirms that the number of municipalities reporting data remains stable across all months — so dips reflect real-world slowdowns, not data gaps.
+- These declines are likely due to seasonal effects (e.g., winter months, weather-related installation delays), grid integration timing, or behavioral/policy lags.
+- After dips, recovery is often strong, suggesting a resilient and growing solar adoption landscape.
+- The average monthly growth rate sits around 2–3%, indicating a modest but sustained national expansion.
 
 > Visuals:
-- *Line Chart: Average Usage Over Time (with Forecast)*
-- *Monthly Growth Rate Line*
+- Monthly Growth Rate of Solar Usage Line Chart (Colored by Rate, Trend Line + Forecast Cutoff)
+- Municipality Reporting Count Over Time (Python)
+- Distribution of Usage Ratios in Outlier Months (Python)
 
 ---
 
