@@ -62,137 +62,188 @@ To enable **map visualizations** at the canton level, we included additional spa
 
 ---
 
-
 ## 🧠 Executive Summary
 
-As of **March 2024**:
+Switzerland is scaling up solar energy — but **not all municipalities are keeping pace**.
 
-- 🌤️ **National average solar usage is 7% (as of March 2024)**, rising from 4.3% in 2021.
-- 🏘️ **289 out of 2184 municipalities (13.2%) use less than 5% of their solar potential**, even with installed infrastructure.
-- 🏅 **Top-performing municipalities** exceed 40% usage, often clustered within certain cantons like Ticino (TI), and Vaud (VD).
-- 🔍 Despite having the highest levels of installed solar capacity, major Swiss cities like Zürich, Bern, and Lausanne are utilizing less than 5% of their solar potential.
-- 📈 If current trends hold, national usage is projected to reach **~10% by mid-2025**.
+This data-driven portfolio project explores how 2,000+ municipalities utilize their solar potential using data from **Energie Reporter (2021–2024)**. Despite rising installed capacity, many regions show **underutilization**, **regional disparities**, and **missed efficiency opportunities**.
+
+### 🔍 Key Findings
+
+- ⚖️ **Installed capacity ≠ effective usage**: Many high-capacity municipalities (e.g., Bern, Lausanne) use <10% of their solar potential.
+- 🏆 **Top performers punch above their weight**: Smaller municipalities like Clarmont and Curio achieve >30% usage — despite limited infrastructure.
+- 📉 **Growth is real but volatile**: Solar usage is growing nationally (~2–3% monthly), though seasonal and systemic dips exist.
+- 🗺️ **Regional disparities are stark**: Rural cantons like AI and AR lead usage, while urban-heavy cantons (ZH, GE, TI) lag — suggesting **policy and implementation**, not geography, drive success.
+- 🎯 **Actionable targets identified**: Underperforming municipalities with high capacity and low usage are ideal candidates for focused investment, audits, or incentives.
 
 ---
 
 ## 📊 Insights Deep Dive
 
 ### 1. 🔝 Adoption Leaders and Laggards
-- Histogram reveals a **long tail**: most municipalities are underperforming.
-- Leading municipalities like Onnens (VD) and Clarmont (VD) have solar potential usage rates over 6× the national average.
-- The national average stands at 6.7%, while the top municipality exceeds 40% — highlighting significant geographic disparities.
-- Most others are still far below the national average — signaling room for growth and replication of best practices.
-- If more municipalities matched even the mid-tier performers, national solar usage could grow substantially.
-- Municipalities in similar cantons (e.g., VD and FR) show variable performance, indicating that policy, not geography, may be the key driver.
-- Outperformers often share regional or infrastructure characteristics.
 
-> Visuals:
-- *Histogram of Solar Usage (Mar 2024)*
-- *Top 10 Municipalities by Usage*
+- A long-tailed distribution reveals that the **majority of municipalities are using less than 10%** of their solar potential.
+- **Over 280 municipalities** fall below the 5% usage mark, despite having installed capacity.
+- **Top performers** like Onnens (VD) and Clarmont (VD) utilize over **6× the national average** (6.7%).
+- The **top municipality reaches nearly 60%**, while most remain under 10%, exposing deep disparities.
+- This variation occurs **within the same cantons** (e.g., VD, FR), indicating policy or implementation differences, not just geographic or solar resource limitations.
+- If underperforming municipalities matched the efficiency of mid-to-top performers, **national solar usage would dramatically increase**.
+
+**Visuals**:
+- Histogram of Solar Usage (March 2024)
+- Top/Bottom 10 Municipalities by Usage (Actual & Projected)
 
 ---
 
 ### 2. ⚖️ Installed Capacity ≠ Usage
-- There's no strong linear correlation between installed capacity (kWp) and actual usage (%).
-- Some municipalities with very high capacity (>10,000 kWp) still have very low usage (<10%), indicating underutilization.
-- There’s a dense cluster of municipalities with moderate capacity and low usage (bottom-right quadrant).This suggests structural inefficiencies or policy/implementation issues.
-- High-capacity, low-usage municipalities may have invested in infrastructure without ensuring uptake, integration, or behavior change.
-- Municipalities with low installed capacity but high usage (Curio, Astano) are potentially model cases of efficiency. These municipalities make the most out of limited resources — ideal for best practice case studies.
-- As installed capacity increases beyond a threshold (e.g., 15k–20k kWp), usage stagnates or drops. This may imply scale-related inefficiencies, lack of grid integration, or oversizing without uptake.
-- Darker shades (pink/purple) indicate extreme inefficiency — useful to pinpoint which municipalities to audit or support.
-- Color distribution also shows inefficiency is widespread across cantons, not just isolated.
-- Cantons BE and AG appear to have a disproportionately high number of municipalities with underutilized solar capacity — indicating regional opportunity for better solar adoption initiatives or more efficient usage.
-- Upper-right quadrant (high capacity & high usage) is nearly empty, suggesting very few municipalities are both scaling and utilizing effectively.
-- Lower-left quadrant is densely populated — showing a long tail of low-capacity, low-usage municipalities, which may represent areas with either limited funding or weak policy engagement.
-- Opportunity zone: Mid-capacity + mid-usage municipalities might be the most scalable targets — they have infrastructure and moderate performance, suggesting room for improvement.
-- High Capacity + Low Usage = "Underperformers": Zürich, Bern, Lausanne, Basel, Bellinzona
-- Low Capacity + High Usage = "Efficiency Champions": Curio, Astano, Rovray, Clarmont
-- High Capacity + High Usage = "Model Scalers": No
-- Low Capacity + Low Usage = "Neglected Zone": Auboranges, Andermatt, Saxeten.
-- At very high installed capacity (>25kW or >40kW), solar usage plateaus or drops. This is critical for national investment planning: don’t just install more; ensure it's used well.
-- 
 
-> Visuals:
-- *Installed Capacity vs Usage Scatterplot*
-- *Filter: Canton / High Unused Potential*
+- The scatterplot shows **no clear correlation** between installed solar capacity and actual usage.
+- Municipalities with **very high capacity (>10,000 kWp)** often use **<10%** of it — a major sign of underutilization.
+- Conversely, places like **Curio** and **Astano** achieve **40–50%+ usage** with relatively small installed capacity — highlighting operational efficiency and behavioral/policy success.
+- The **upper-right quadrant (high capacity, high usage)** is sparsely populated — very few municipalities manage to **scale AND use efficiently**.
+- Large cities like **Zürich, Bern, Lausanne, and Geneva** sit in the **“High Capacity, Low Usage” zone**, representing untapped opportunity.
+- **Darker colors** in the scatterplot signal extreme inefficiency, visible across many cantons, notably **BE and AG**.
+- Usage seems to **plateau or decline** at very high capacity levels (>25kWp), suggesting scaling challenges, poor integration, or behavioral barriers.
+
+**Quadrant Summary**:
+- **High Capacity + Low Usage = Underperformers**: Zürich, Lausanne, Bern, Geneva  
+- **Low Capacity + High Usage = Efficiency Champions**: Curio, Astano, Rovray, Clarmont  
+- **Low Capacity + Low Usage = Neglected Zone**: Auboranges, Andermatt, Saxeten  
+- **High Capacity + High Usage = Rare (Model Scalers)**
+
+**Visuals**:
+- Installed Capacity vs Usage Scatterplot (Actual & Projected)
+- Top Inefficient Cities Highlight
 
 ---
 
 ### 3. 📈 Growth Trends Over Time
-- Switzerland has shown steady solar potential usage growth over the past 3 years, with an overall upward trend despite volatility in specific months.
-- While growth rates vary from month to month, a positive long-term trajectory is evident, as confirmed by the trend line.
-- There are occasional dips, such as in April 2023 (-12.8%) and February 2022 (-4.9%), but these are not due to missing data or reporting inconsistencies.
-- Python analysis confirms that the number of municipalities reporting data remains stable across all months — so dips reflect real-world slowdowns, not data gaps.
-- These declines are likely due to seasonal effects (e.g., winter months, weather-related installation delays), grid integration timing, or behavioral/policy lags.
-- After dips, recovery is often strong, suggesting a resilient and growing solar adoption landscape.
-- The average monthly growth rate sits around 2–3%, indicating a modest but sustained national expansion.
 
-> Visuals:
-- Monthly Growth Rate of Solar Usage Line Chart (Colored by Rate, Trend Line + Forecast Cutoff)
-- Municipality Reporting Count Over Time (Python)
-- Distribution of Usage Ratios in Outlier Months (Python)
+- **Solar usage in Switzerland has grown steadily**, nearly **doubling over 3 years** from ~4.5% to 10.8% nationally.
+- Despite **short-term volatility**, the **long-term trend is positive** — confirmed by a dotted trend line.
+- **Sharp dips** (e.g., -12.8% in April 2023) are not due to data reporting gaps — verified via Python — but likely reflect **seasonal patterns, grid delays, or policy cycles**.
+- Growth often rebounds quickly after dips, underscoring **resilience and continued expansion**.
+- The average **monthly growth rate sits between 2–3%**, modest but consistent.
+- Growth shows **no signs of saturation** — with plenty of headroom left in terms of national potential.
+
+**Visuals**:
+- Solar Potential Usage Over Time (Line)
+- Monthly Growth Rate (Colored by Rate, With Trend Line)
+- Reporting Count Validation (Python)
 
 ---
 
 ### 4. 🎯 Target Municipalities for Action
-- Identified municipalities with:
-  - High installed capacity
-  - Low usage %
-  - High unused potential
-- These are prime candidates for incentives, policy, or technical support.
 
-> Visuals:
-- *Filterable List/Table: High-Potential Municipalities*
-- *(Optional)* *Map View: Solar Opportunity Hotspots*
+- Identified municipalities that combine:
+  - **High Installed Capacity**
+  - **Low Solar Potential Usage**
+  - **Large Unused Potential**
+- These areas represent **"low-hanging fruit"** for intervention: incentive redesign, behavioral nudges, or integration efforts.
+- Major cities are prominent in this group, reinforcing the need for **urban strategy reform**.
+
+**Visuals**:
+- Table/List of High-Potential Municipalities
+- Highlighted Map View (Bubble Color = Usage, Size = Capacity)
 
 ---
 
 ### 5. 🗺️ Regional Disparities
-- In both actual and projected data, there's a clear usage gap between leading and lagging cantons.
-- Leading cantons like AI, AR, LU, SG consistently show higher-than-average usage.
-- Lagging cantons — UR, VS, GE, GR — remain below the national average even in projections.
-- While the national average increases from ~7.2% (actual) to ~11.0% (projected), not all cantons benefit equally: Some low-performing cantons improve slightly but remain at the bottom. AI jumps to the top in projected data, suggesting strong policy or adoption plans.
-- Surprisingly, rural cantons (e.g., AI, AR, LU) outperform urban-heavy ones (e.g., ZH, GE, TI), indicating that urbanization isn’t a driver of solar efficiency. This hints at better engagement, adoption, or policy execution in smaller/rural cantons.
-- Some cantons with large installed capacities (e.g., BE, GE) still rank low in actual usage, suggesting underutilization of infrastructure. This reinforces earlier scatterplot findings about inefficiencies at scale.
-- Cantons with both low actual and projected usage may need targeted intervention, such as: Local incentive redesign, infrastructure integration support, public engagement or behavior chnage campaigns.
-- 
 
-> Visuals:
-- *Average Usage by Canton*
-- *(Add)* *Choropleth Map by Municipality*
+- **Clear usage gaps** exist between top and bottom cantons, both in actual and projected data.
+- Leading cantons like **LU, AI, AR, SG, TG** consistently outperform — hitting **10–17% usage**.
+- Lagging cantons — **UR, VS, GE, GR** — remain under **6%**, even in projections.
+- Surprisingly, **rural cantons outperform urban ones** — showing that **urbanization does not guarantee efficiency**.
+- **BE and GE**, despite large installed capacity, continue to underutilize — aligning with inefficiency seen in scatterplots.
+- In projected usage, the **gap between leaders and laggards widens**, reinforcing the need for targeted interventions.
+- **Regional disparities are persistent** and require **canton-level planning adjustments** — especially in **infrastructure integration and behavior programs**.
+
+**Visuals**:
+- Average Usage by Canton (Actual & Projected)
+- Choropleth & Bubble Map (Color = Usage, Size = Capacity)
 
 ---
 
 ## 📌 Recommendations
 
-1. **Target Underperforming Municipalities**  
-   Focus incentives or education programs where capacity is high, but usage is low.
+While this project does not propose direct policy actions, the following data-driven insights offer **guidance to stakeholders** — including municipal planners, energy agencies, and sustainability teams — who are in a position to take action.
 
-2. **Replicate Best Practices**  
-   Study top-performing municipalities to replicate success in similar regions.
+### 1. 🎯 Prioritize High-Capacity, Low-Usage Municipalities
+- **Target municipalities** with significant installed capacity but under 10% solar usage.
+- These locations represent **quick wins** — the infrastructure exists, but optimization or behavioral nudges are missing.
+- Major cities like **Zürich, Geneva, Lausanne, and Bern** fall into this group and may benefit from operational audits or public engagement.
 
-3. **Monitor Usage, Not Just Capacity**  
-   Set performance goals based on actual utilization, not just installations.
+### 2. 📍 Leverage Efficiency Models from Top Performers
+- **Study municipalities** such as **Curio, Onnens (VD), and Astano**, which achieve 40–60%+ usage.
+- Extract operational, regulatory, or cultural patterns that could be **replicated in low-performing areas**.
+- Peer comparisons within cantons (e.g., FR, VD) are particularly useful due to shared geography and solar potential.
 
-4. **Enable Self-Service Benchmarking**  
-   Build dashboards for municipalities to compare performance and track progress.
+### 3. 🧭 Focus on Cantonal Strategy Alignment
+- Cantonal governments can benefit from dashboards showing **intra-canton variance**.
+- This variance suggests opportunities to **standardize processes, incentives, or data flows** across municipalities within the same canton.
+- Cantons like **VS, UR, GE, and GR** show consistently low usage and may require **capacity-building at the local level**.
 
+### 4. ⚖️ Match Capacity Investment with Operational Readiness
+- Avoid installing more solar capacity without ensuring **capacity is being used**.
+- Use scatterplots from this analysis to guide **smarter infrastructure planning** — focusing not just on quantity but **realistic utilization**.
+
+### 5. 📈 Monitor Volatility, but Focus on the Trend
+- The monthly growth rate shows **volatility**, but long-term national usage is **steadily increasing**.
+- Stakeholders should **not overreact to short-term dips**, but maintain **consistent support** aligned with the growth trend.
+- Data systems should flag **structural drops** (e.g., >10% monthly declines) for diagnostic follow-up.
+
+### 6. 🔎 Use Data-Driven Dashboards for Ongoing Monitoring
+- This portfolio demonstrates how **geospatial, time-series, and categorical data** can be combined to:
+  - Detect inefficiencies
+  - Compare regional performance
+  - Forecast solar usage potential
+- Stakeholders can extend this approach by integrating **real-time data** and **energy consumption overlays** for deeper impact.
+
+---
+
+> These recommendations are derived purely from exploratory data analysis and visualization. Final action should be informed by additional context, domain expertise, and stakeholder collaboration.
 ---
 
 ## ⚠️ Caveats & Assumptions
 
-- `solar_potential_usage` is calculated as a basic ratio — does not account for weather, shading, or roof orientation.
-- Forecasts are based on historical exponential smoothing, **not ML**.
-- **No demographic or economic data** included in this version.
-- Some solar capacity installation timestamps may lag actual project completion.
-- **Data Cutoff**: Values after March 2024 were excluded as projections. Our analysis focuses on actual data through March 2023.
-- **Outliers**: One record (Chapelle (Glâne)) reported >100% usage; this was capped at 100% for visualization.
-- **Projected Data**: Entries beyond last update (Mar 2024) likely represent forecasts or estimates—not measured values.
-- **Temporal Gaps**: Use of rolling averages causes minor delays in trend lines immediately after cutoffs.
-- **Municipality Aggregation**: National trends sum municipalities assuming no overlaps.
-- **No External Validation**: Data taken at face value without cross‑referencing federal statistics.
+### 📊 Data-Related Caveats
 
----
+- **Historicization of Data**:  
+  The dataset is a **"historicized" version** of municipality-level indicators from Energie Reporter. Each month's data reflects the status as of that reporting date — this assumes accuracy and continuity in the source.
+
+- **Limited Scope of Variables**:  
+  We focused exclusively on solar-relevant variables:
+  - `solar_power_installed_kwp`
+  - `solar_potential_usage`
+  
+  Other potentially important columns (e.g., electric car share, heating, wind energy) were excluded for scope clarity — this **limits holistic energy analysis**.
+
+- **One Outlier Removed**:  
+  One municipality — **Chapelle (Glâne)** — reported **solar potential usage above 100%**, which is likely due to reporting or calculation error. It was **excluded** from the final analysis.
+
+- **Projection Assumptions**:  
+  We distinguish between:
+  - Actual data (up to March 2024)
+  - Forward projections (post-March 2024)
+
+  All projections assume **continuity of existing trends** and **no external disruptions** (e.g., policy shifts, climate anomalies, grid infrastructure changes).
+
+### 📉 Analytical Assumptions
+
+- **Solar Potential Usage (%) as a Proxy for Efficiency**:  
+  We're interpreting `solar_potential_usage` as a measure of how efficiently each municipality uses its capacity. This **does not account for local constraints**, such as:
+  - grid saturation
+  - shading from mountains
+  - building orientation
+
+- **"Low Usage" Defined Arbitrarily**:  
+  Thresholds for categories (e.g., "Very Low" <5%) are based on **visual clustering** and are not standardized by national benchmarks.
+
+- **No Weather or Irradiance Control**:  
+  This analysis does not account for **solar irradiance differences** across Switzerland (e.g., alpine vs. plateau regions). Solar usage % is interpreted without correcting for expected yield variation.
+
+- **Temporal Trends Assume Constant Reporting**:  
+  Missing months, lags, or changes in Energie Reporter’s methodology are not adjusted for — **monthly growth rates** may reflect reporting artifacts.
 
 ## 🔗 Deliverables
 
