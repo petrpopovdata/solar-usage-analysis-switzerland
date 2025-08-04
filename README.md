@@ -247,7 +247,7 @@ While this project does not propose direct policy actions, the following data-dr
 
 ## 🔗 Deliverables
 
-- 📈 [Interactive Tableau Dashboard](#) *(hosted on Tableau Public)*  
+- 📈 [Interactive Tableau Dashboard](https://public.tableau.com/views/SolarUsageAnalysisSwitzerland/SwissSolarPotentialDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) *(hosted on Tableau Public)*  
 - 🐍 [Python EDA + Data Cleaning Notebook](#) *(GitHub repo)*  
 - 📁 [Cleaned CSV File](#) *(optional link)*  
 
