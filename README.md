@@ -249,7 +249,7 @@ While this project does not propose direct policy actions, the following data-dr
 
 - 📈 [Interactive Tableau Dashboard](https://public.tableau.com/views/SolarUsageAnalysisSwitzerland/SwissSolarPotentialDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) *(hosted on Tableau Public)*  
 - 🐍 [Python EDA + Data Cleaning Notebook](swiss-solar-final.ipynb) *(GitHub repo)*  
-- 📁 [Cleaned CSV File](#) *(optional link)*  
+- 📁 [Cleaned CSV File](solar_municipality_unified1.csv) *(optional link)*  
 
 ---
 
