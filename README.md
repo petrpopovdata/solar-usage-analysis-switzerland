@@ -248,7 +248,7 @@ While this project does not propose direct policy actions, the following data-dr
 ## 🔗 Deliverables
 
 - 📈 [Interactive Tableau Dashboard](https://public.tableau.com/views/SolarUsageAnalysisSwitzerland/SwissSolarPotentialDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) *(hosted on Tableau Public)*  
-- 🐍 [Python EDA + Data Cleaning Notebook](#) *(GitHub repo)*  
+- 🐍 [Python EDA + Data Cleaning Notebook](swiss-solar-final.ipynb) *(GitHub repo)*  
 - 📁 [Cleaned CSV File](#) *(optional link)*  
 
 ---
@@ -260,11 +260,5 @@ While this project does not propose direct policy actions, the following data-dr
 - 📈 Trend & forecast analysis
 - 💬 Executive-level insights & recommendations
 - 🧠 Stakeholder framing
-
----
-
-## ✍️ Interview Summary
-
-> “This project simulates a real-world analysis for federal and local policymakers. I identified underused solar resources in Switzerland using a mix of trend analysis, benchmarking, and forecast modeling. I approached it as if I were on a cross-functional energy planning team, delivering insights and action points, not just charts.”
 
 ---
