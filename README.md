@@ -90,8 +90,8 @@ This data-driven portfolio project explores how 2,000+ municipalities utilize th
 - If underperforming municipalities matched the efficiency of mid-to-top performers, **national solar usage would dramatically increase**.
 
 **Visuals**:
-- Histogram of Solar Usage (March 2024)
-- Top/Bottom 10 Municipalities by Usage (Actual & Projected)
+- Histogram of Solar Usage (March 2024) ![image alt](https://github.com/petrpopovdata/solar-usage-analysis-switzerland/blob/a694b50695bd0aab93f720f55dab01351343c9ea/Histogram%20of%20Solar%20Potential%20Usage.png)
+- Top/Bottom 10 Municipalities by Usage (Actual & Projected) ![image alt](https://github.com/petrpopovdata/solar-usage-analysis-switzerland/blob/a694b50695bd0aab93f720f55dab01351343c9ea/Top%20and%20Bottom%2010%20Municipalities.png)
 
 ---
 
@@ -112,8 +112,7 @@ This data-driven portfolio project explores how 2,000+ municipalities utilize th
 - **High Capacity + High Usage = Rare (Model Scalers)**
 
 **Visuals**:
-- Installed Capacity vs Usage Scatterplot (Actual & Projected)
-- Top Inefficient Cities Highlight
+- Installed Capacity vs Usage Scatterplot (Actual & Projected) ![image alt](https://github.com/petrpopovdata/solar-usage-analysis-switzerland/blob/a694b50695bd0aab93f720f55dab01351343c9ea/Installed%20Capacity%20vs%20Solar%20Usage%20by%20Municipality.png)
 
 ---
 
@@ -127,8 +126,8 @@ This data-driven portfolio project explores how 2,000+ municipalities utilize th
 - Growth shows **no signs of saturation** — with plenty of headroom left in terms of national potential.
 
 **Visuals**:
-- Solar Potential Usage Over Time (Line)
-- Monthly Growth Rate (Colored by Rate, With Trend Line)
+- Solar Potential Usage Over Time (Line) ![image alt](https://github.com/petrpopovdata/solar-usage-analysis-switzerland/blob/a694b50695bd0aab93f720f55dab01351343c9ea/Line%20Chart%20of%20Avergae%20Usage%20over%20Time.png)
+- Monthly Growth Rate (Colored by Rate, With Trend Line) ¨![image alt](https://github.com/petrpopovdata/solar-usage-analysis-switzerland/blob/a694b50695bd0aab93f720f55dab01351343c9ea/Monthly%20Growth%20Rate.png)
 - Reporting Count Validation (Python)
 
 ---
@@ -143,8 +142,8 @@ This data-driven portfolio project explores how 2,000+ municipalities utilize th
 - Major cities are prominent in this group, reinforcing the need for **urban strategy reform**.
 
 **Visuals**:
-- Table/List of High-Potential Municipalities
-- Highlighted Map View (Bubble Color = Usage, Size = Capacity)
+- High Capacity Low Usage Municipalities ![image alt](https://github.com/petrpopovdata/solar-usage-analysis-switzerland/blob/a694b50695bd0aab93f720f55dab01351343c9ea/High%20Capacity%20Low%20Usage.png)
+- Highlighted Map View (Bubble Color = Usage, Size = Capacity) ![image alt](https://github.com/petrpopovdata/solar-usage-analysis-switzerland/blob/a694b50695bd0aab93f720f55dab01351343c9ea/Canton%20Map.png)
 
 ---
 
@@ -159,8 +158,7 @@ This data-driven portfolio project explores how 2,000+ municipalities utilize th
 - **Regional disparities are persistent** and require **canton-level planning adjustments** — especially in **infrastructure integration and behavior programs**.
 
 **Visuals**:
-- Average Usage by Canton (Actual & Projected)
-- Choropleth & Bubble Map (Color = Usage, Size = Capacity)
+- Average Usage by Canton (Actual & Projected) ![image alt](https://github.com/petrpopovdata/solar-usage-analysis-switzerland/blob/a694b50695bd0aab93f720f55dab01351343c9ea/Average%20Solar%20Potential%20Usage%20by%20Canton.png)
 
 ---
 
