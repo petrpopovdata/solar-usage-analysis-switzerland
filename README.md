@@ -1,4 +1,4 @@
-tgleich# ☀️ Swiss Solar Adoption: Are We Fully Tapping Municipal Potential?
+# ☀️ Swiss Solar Adoption: Are We Fully Tapping Municipal Potential?
 
 ## 📌 Project Background
 
